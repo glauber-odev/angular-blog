@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuTitleComponent } from "../menu-title/menu-title.component";
 
 @Component({
@@ -9,5 +9,11 @@ import { MenuTitleComponent } from "../menu-title/menu-title.component";
   styleUrl: './big-card.component.css'
 })
 export class BigCardComponent {
+  @Input()
+  photoCover: string = "";
+  @Input()
+  cardTitle: string = "";
+  @Input()
+  cardDescrition: string = "";
 
 }
